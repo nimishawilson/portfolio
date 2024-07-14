@@ -1,0 +1,31 @@
+$primary-color-start: #6a11cb;
+$primary-color-end: #3572EF;
+$border-color: rgba(255, 255, 255, 0.5);
+$text-color: white;
+$hover-shadow: rgba(0, 0, 0, 0.2);
+$box-shadow: rgba(0, 0, 0, 0.1);
+
+.pill {
+  display: inline-block;
+  padding: 12px 24px;
+  background: linear-gradient(45deg, $primary-color-start, $primary-color-end);
+  color: $text-color;
+  font-size: 1rem;
+  font-weight: bold;
+  border: 2px solid $border-color;
+  border-radius: 50px;
+  box-shadow: 0 4px 6px $box-shadow;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+
+  &:hover {
+    background: linear-gradient(
+      45deg,
+      $primary-color-end,
+      $primary-color-start
+    );
+    box-shadow: 0 6px 8px $hover-shadow;
+    transform: translateY(-2px);
+  }
+}
