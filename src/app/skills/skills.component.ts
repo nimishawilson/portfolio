@@ -24,5 +24,6 @@ export class SkillsComponent {
     'RxJs',
     'NgRx',
     'git',
+    'Agile'
   ];
 }
