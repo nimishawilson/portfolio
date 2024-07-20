@@ -2,11 +2,12 @@ import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { ProfileComponent } from './profile/profile.component';
 import { SkillsComponent } from './skills/skills.component';
+import { ExperienceComponent } from './experience/experience.component';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, ProfileComponent, SkillsComponent],
+  imports: [RouterOutlet, ProfileComponent, SkillsComponent, ExperienceComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })
