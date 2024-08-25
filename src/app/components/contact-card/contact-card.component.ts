@@ -9,4 +9,8 @@ import { Component } from '@angular/core';
 })
 export class ContactCardComponent {
 
+  openResume() {
+    window.open('/assets/Nimisha-Resume.pdf', '_blank');
+  }
+
 }
