@@ -1,3 +1,5 @@
+@import "../../styles/variables";
+
 .description {
   font-family: "Roboto", sans-serif;
   font-size: 1.3rem;
@@ -9,7 +11,7 @@
 }
 
 h1 {
-  color: #050c9c;
+  color: $color-primary-dark;
 }
 
 .role {
@@ -19,7 +21,7 @@ h1 {
 }
 
 .card-header {
-  background-color: #3572ef;
+  background-color: $color-primary;
   color: white;
   border-radius: 10px 10px 0 0;
   padding: 0.1em;
@@ -35,12 +37,11 @@ h1 {
 }
 
 .time-line {
-    color: gray;
+    color: $color-grey;
 }
 
 .experience-card {
   border-radius: 10px;
-  box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 15px 20px $color-grey-light;
   margin-bottom: 2rem;
 }
-

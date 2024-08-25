@@ -1,31 +1,22 @@
-$primary-color-start: #6a11cb;
-$primary-color-end: #3572EF;
-$border-color: rgba(255, 255, 255, 0.5);
-$text-color: white;
-$hover-shadow: rgba(0, 0, 0, 0.2);
-$box-shadow: rgba(0, 0, 0, 0.1);
+@import "../../../styles/variables";
 
 .pill {
   display: inline-block;
   padding: 12px 24px;
-  background: linear-gradient(45deg, $primary-color-start, $primary-color-end);
-  color: $text-color;
+  background: linear-gradient(45deg, $color-primary-dark, $color-primary);
+  color: $color-white;
   font-size: 1rem;
   font-weight: bold;
-  border: 2px solid $border-color;
+  border: 2px solid $color-grey;
   border-radius: 50px;
-  box-shadow: 0 4px 6px $box-shadow;
+  box-shadow: 0 4px 6px $color-grey-light;
   text-align: center;
   cursor: pointer;
   transition: all 0.3s ease;
 
   &:hover {
-    background: linear-gradient(
-      45deg,
-      $primary-color-end,
-      $primary-color-start
-    );
-    box-shadow: 0 6px 8px $hover-shadow;
+    background: linear-gradient(45deg, $color-primary, $color-primary-dark);
+    box-shadow: 0 6px 8px $color-grey-light;
     transform: translateY(-2px);
   }
 }
